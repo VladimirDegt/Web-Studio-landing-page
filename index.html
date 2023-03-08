@@ -1,97 +1,659 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Studio</title>
-    <link rel="stylesheet" href="./css/styles.css">
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@800&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="icon" href="favicon.ico">
 
-</head>
-<body>
-    <header>
-        <nav>
-            <a class="logo reset" href="">WEB<span class="nav-span">STUDIO</span></a>
-            <ul class="reset">
-                <li><a class="site-nav reset" href="./index.html">Studio</a></li>
-                <li><a class="site-nav reset" href="./portfolio.html">Portfolio</a></li>
-                <li><a class="site-nav reset" href="./contacts.html">Contacts</a></li>
-            </ul>
-        </nav>    
-            <ul class="reset">
-                <li><a class="contacts reset" href="mailto:@devstudio.com">info@devstudio.com</a></li>
-                <li><a class="contacts reset" href="tel:+110001111111">+11 (000) 111-11-11</a></li>
-            </ul>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@800&family=Roboto:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+      integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./css/styles.css" />
+  </head>
+  <body>
+    <header class="scroll">
+      <div class="container header">
+        <nav class="list-nav">
+          <a class="logo reset" href=""
+            >WEB<span class="nav-span">STUDIO</span></a
+          >
+          <ul class="nav-pages reset">
+            <li>
+              <a class="site-nav reset active" href="./index.html">Studio</a>
+            </li>
+            <li>
+              <a class="site-nav reset" href="./portfolio.html">Portfolio</a>
+            </li>
+            <li>
+              <a class="site-nav reset" href="./contacts.html">Contacts</a>
+            </li>
+          </ul>
+        </nav>
+        <button data-modal-open class="btn-mobile-menu" type="button">
+          <svg class="mobile-menu-open-icon">
+            <use href="./img/icons.svg#icon-antenna"></use>
+          </svg>          
+        </button>
+        
+        <!-- ----------------мобильное меню---------------------- -->
+
+        <div data-modal class="mobile-menu is-hidden">
+          <div class="container mobile-menu-container">
+          <button data-modal-close class="bnt-close">
+            <svg class="icon-close">
+              <use href="./img/icons.svg#icon-close"></use>
+            </svg>
+          </button>
+
+          <ul class="mobile-menu-list-pages reset">
+            <li>
+              <a class="mobile-menu-list-pages-link reset" href="./index.html">Studio</a>
+            </li>
+            <li>
+              <a class="mobile-menu-list-pages-link reset" href="./portfolio.html">Portfolio</a>
+            </li>
+            <li>
+              <a class="mobile-menu-list-pages-link reset active" href="./contacts.html">Contacts</a>
+            </li>
+          </ul>
+
+          <ul class="mobile-menu-list-contacts reset">
+            <li>
+              <li>
+                <a class="contacts-tel reset" href="tel:+110001111111"
+                  >+11 (000) 111-11-11</a
+                >
+              </li>
+              <a class="contacts-mail reset" href="mailto:info@devstudio.com"
+                >info@devstudio.com</a
+              >
+            </li>
+          </ul>
+          
+          <ul class="mobile-menu-list-social reset">
+            <li>
+              <a href="" class="mobile-menu-link-icon reset">
+                <svg class="mobile-menu-icon">
+                  <use href="./img/icons.svg#icon-instagram_f">
+
+                  </use>
+                </svg>
+              </a>
+            </li>
+
+            <li>
+              <a href="" class="mobile-menu-link-icon reset">
+                <svg class="mobile-menu-icon">
+                  <use href="./img/icons.svg#icon-twitter_f">
+
+                  </use>
+                </svg>
+              </a>
+            </li>
+
+            <li>
+              <a href="" class="mobile-menu-link-icon reset">
+                <svg class="mobile-menu-icon">
+                  <use href="./img/icons.svg#icon-facebook_f">
+
+                  </use>
+                </svg>
+              </a>
+            </li>
+
+            <li>
+              <a href="" class="mobile-menu-link-icon reset">
+                <svg class="mobile-menu-icon">
+                  <use href="./img/icons.svg#icon-linkedin_f">
+
+                  </use>
+                </svg>
+              </a>
+            </li>
+
+          </ul>
+        </div>
+      </div>
+        <!-- ----------------END мобильное меню---------------------- -->
+
+        <ul class="list-contacts reset">
+          <li>
+            <a class="contacts reset" href="mailto:info@devstudio.com"
+              >info@devstudio.com</a
+            >
+          </li>
+          <li>
+            <a class="contacts reset" href="tel:+110001111111"
+              >+11 (000) 111-11-11</a
+            >
+          </li>
+        </ul>
+
+      </div>
     </header>
-    <main>
-        <section class="hero">
-            <h1 class="hero-title">Effective Solutions
-                for Your Business</h1>
-            <button class="hero-button" type="button">Order Service</button>    
-        </section>
-        <section class="sectionOne">
-            <h2 class="hide">Solutions</h2>
-            <ul class="reset"> 
-                <li>
-                    <h3 class="sectionOne-title">Strategy</h3>
-                    <p>Our goal is to identify the business
-                        problem to walk away with the perfect and creative solution. </p>
-                </li>
-                <li>
-                    <h3 class="sectionOne-title">Punctualityy</h3>
-                    <p>Bring the key message to the brand's audience for the best price within the shortest possible time.</p>
-                </li>
-                <li>
-                    <h3 class="sectionOne-title">Diligence</h3>
-                    <p>Research and confirm brands that present the strongest digital growth opportunities and minimize risk. </p>
-                </li>
-                <li>
-                    <h3 class="sectionOne-title">Technologies</h3>
-                    <p>Design practice focused on digital experiences. We bring forth a deep passion for problem-solving. </p>
-                </li>
+    <!-- <main>
+
+
+      <section class="hero">
+        <div class="container">
+            <h1 class="hero-title">Effective Solutions for Your Business</h1>
+            <button data-modal-open class="hero-button" type="button">Order Service</button>
+        </div>
+      </section>
+
+
+
+      <section class="sectionOne section">
+        <div class="container">
+          <h2 class="visually-hidden">Solutions</h2>
+          <ul class="list-solutions reset">
+
+            <li>
+              <div class="tumba-icon-solutions">
+              <svg class="icon-solutions">
+                <use href="./img/icons.svg#icon-antenna"></use>
+              </svg>
+              </div>
+              <h3 class="sectionOne-title">Strategy</h3>
+              <p>
+                Our goal is to identify the business problem to walk away with
+                the perfect and creative solution.
+              </p>
+            </li>
+
+            <li>
+              <div class="tumba-icon-solutions">
+              <svg class="icon-solutions">
+                <use href="./img/icons.svg#icon-clock"></use>
+              </svg>
+              </div>
+              <h3 class="sectionOne-title">Punctualityy</h3>
+              <p>
+                Bring the key message to the brand's audience for the best price
+                within the shortest possible time.
+              </p>
+            </li>
+
+            <li>
+              <div class="tumba-icon-solutions">
+              <svg class="icon-solutions">
+                <use href="./img/icons.svg#icon-diagram"></use>
+              </svg>
+              </div>
+              <h3 class="sectionOne-title">Diligence</h3>
+              <p>
+                Research and confirm brands that present the strongest digital
+                growth opportunities and minimize risk.
+              </p>
+            </li>
+
+            <li>
+              <div class="tumba-icon-solutions">
+              <svg class="icon-solutions">
+                <use href="./img/icons.svg#icon-astronaut"></use>
+              </svg>
+              </div>
+              <h3 class="sectionOne-title">Technologies</h3>
+              <p>
+                Design practice focused on digital experiences. We bring forth a
+                deep passion for problem-solving.
+              </p>
+            </li>
+
+          </ul>
+        </div>
+      </section>
+      <section class="sectionTwo">
+        <div class="container">
+          <h2 class="sectionTwo-title">what are we doing</h2>
+            <ul class="list-img reset">
+
+              <li>
+                <img
+                  src="./img/monitor.jpg"
+                  alt="Monitor on the table"
+                  width="360"
+                  height="300"
+                />
+              </li>
+
+              <li>
+                <img
+                  src="./img/phone.jpg"
+                  alt="Phone with four pictures"
+                  width="360"
+                  height="300"
+                />
+              </li>
+
+              <li>
+                <img
+                  src="./img/nootbook.jpg"
+                  alt="Laptop. Phone held in hand"
+                  width="360"
+                  height="300"
+                />
+              </li>
+
             </ul>
-        </section>
-        <section class="sectionTwo">
-            <h2 class="sectionTwo-title">what are we doing</h2>
-            <ul class="reset">
-                <li><img src="./img/monitor.jpg" alt="Monitor on the table" width="360"></li>
-                <li><img src="./img/phone.jpg" alt="Phone with four pictures" width="360"></li>
-                <li><img src="./img/nootbook.jpg" alt="Laptop. Phone held in hand" width="360"></li>
-            </ul>
-        </section>
-        <section class="sectionTeam">
-            <h2 class="sectionTeam-title">our team</h2>
-            <ul class="reset">
-                <li>
-                    <img src="./img/TeamCard1.jpg" alt="Product Designer" width="264">
-                    <h3 class="sectionOne-title" >Mark Guerrero</h3>
-                    <p>Product Designer</p>
-                </li>
-                <li>
-                    <img src="./img/TeamCard2.jpg" alt="Frontend Developer" width="264">
-                    <h3 class="sectionOne-title" >Tom Ford</h3>
-                    <p>Frontend Developer</p>
-                </li>
-                <li>
-                    <img src="./img/TeamCard3.jpg" alt="Marketing" width="264">
-                    <h3 class="sectionOne-title" >Camila Garcia</h3>
-                    <p>Marketing</p>
-                </li>
-                <li>
-                    <img src="./img/TeamCard4.jpg" alt="UI Designer" width="264">
-                    <h3 class="sectionOne-title" >Daniel Wilson</h3>
-                    <p>UI Designer</p>
-                </li>
-            </ul>
-        </section>
+        </div>
+      </section>
+      <section class="sectionTeam section">
+        <div class="container">
+          <h2 class="sectionTeam-title">our team</h2>
+          <ul class="list-team reset">
+
+            <li class="tumba-person">
+                <img
+                  src="./img/TeamCard1.jpg"
+                  alt="Product Designer"
+                  width="264" height="260"
+                />
+                <div class="card-content">
+                  <h3 class="sectionTeam-name">Mark Guerrero</h3>
+                  <p>Product Designer</p>
+                  <ul class="list-social reset">
+
+                    <li>
+                      <a href="" class="link-icon-team reset">
+                        <svg class="icon-social-team">
+                          <use href="./img/icons.svg#icon-instagram_f">
+
+                          </use>
+                        </svg>
+                      </a>
+                    </li>
+
+                    <li>
+                      <a href="" class="link-icon-team reset">
+                        <svg class="icon-social-team">
+                          <use href="./img/icons.svg#icon-twitter_f">
+
+                          </use>
+                        </svg>
+                      </a>
+                    </li>
+
+                    <li>
+                      <a href="" class="link-icon-team reset">
+                        <svg class="icon-social-team">
+                          <use href="./img/icons.svg#icon-facebook_f">
+
+                          </use>
+                        </svg>
+                      </a>
+                    </li>
+
+                    <li>
+                      <a href="" class="link-icon-team reset">
+                        <svg class="icon-social-team">
+                          <use href="./img/icons.svg#icon-linkedin_f">
+
+                          </use>
+                        </svg>
+                      </a>
+                    </li>
+
+                  </ul>
+                </div>
+
+            </li>
+
+            <li class="tumba-person">
+                <img
+                  src="./img/TeamCard2.jpg"
+                  alt="Frontend Developer"
+                  width="264" height="260"
+                />
+                <div class="card-content">
+                  <h3 class="sectionTeam-name">Tom Ford</h3>
+                  <p>Frontend Developer</p>
+                  <ul class="list-social reset">
+                    
+                    <li>
+                      <a href="" class="link-icon-team reset">
+                        <svg class="icon-social-team">
+                          <use href="./img/icons.svg#icon-instagram_f">
+
+                          </use>
+                        </svg>
+                      </a>
+                    </li>
+
+                    <li>
+                      <a href="" class="link-icon-team reset">
+                        <svg class="icon-social-team">
+                          <use href="./img/icons.svg#icon-twitter_f">
+
+                          </use>
+                        </svg>
+                      </a>
+                    </li>
+
+                    <li>
+                      <a href="" class="link-icon-team reset">
+                        <svg class="icon-social-team">
+                          <use href="./img/icons.svg#icon-facebook_f">
+
+                          </use>
+                        </svg>
+                      </a>
+                    </li>
+
+                    <li>
+                      <a href="" class="link-icon-team reset">
+                        <svg class="icon-social-team">
+                          <use href="./img/icons.svg#icon-linkedin_f">
+
+                          </use>
+                        </svg>
+                      </a>
+                    </li>
+
+                  </ul>
+                </div>
+
+            </li>
+
+            <li class="tumba-person">
+                <img src="./img/TeamCard3.jpg" alt="Marketing" width="264" height="260" />
+                <div class="card-content">
+                  <h3 class="sectionTeam-name">Camila Garcia</h3>
+                  <p>Marketing</p>
+                  <ul class="list-social reset">
+                    
+                    <li>
+                      <a href="" class="link-icon-team reset">
+                        <svg class="icon-social-team">
+                          <use href="./img/icons.svg#icon-instagram_f">
+
+                          </use>
+                        </svg>
+                      </a>
+                    </li>
+
+                    <li>
+                      <a href="" class="link-icon-team reset">
+                        <svg class="icon-social-team">
+                          <use href="./img/icons.svg#icon-twitter_f">
+
+                          </use>
+                        </svg>
+                      </a>
+                    </li>
+
+                    <li>
+                      <a href="" class="link-icon-team reset">
+                        <svg class="icon-social-team">
+                          <use href="./img/icons.svg#icon-facebook_f">
+
+                          </use>
+                        </svg>
+                      </a>
+                    </li>
+
+                    <li>
+                      <a href="" class="link-icon-team reset">
+                        <svg class="icon-social-team">
+                          <use href="./img/icons.svg#icon-linkedin_f">
+
+                          </use>
+                        </svg>
+                      </a>
+                    </li>
+
+                  </ul>
+                </div>
+
+            </li>
+
+            <li class="tumba-person">
+                <img src="./img/TeamCard4.jpg" alt="UI Designer" width="264" height="260" />
+                <div class="card-content">
+                  <h3 class="sectionTeam-name">Daniel Wilson</h3>
+                  <p>UI Designer</p>
+                  <ul class="list-social reset">
+                    
+                    <li>
+                      <a href="" class="link-icon-team reset">
+                        <svg class="icon-social-team">
+                          <use href="./img/icons.svg#icon-instagram_f">
+
+                          </use>
+                        </svg>
+                      </a>
+                    </li>
+
+                    <li>
+                      <a href="" class="link-icon-team reset">
+                        <svg class="icon-social-team">
+                          <use href="./img/icons.svg#icon-twitter_f">
+
+                          </use>
+                        </svg>
+                      </a>
+                    </li>
+
+                    <li>
+                      <a href="" class="link-icon-team reset">
+                        <svg class="icon-social-team">
+                          <use href="./img/icons.svg#icon-facebook_f">
+
+                          </use>
+                        </svg>
+                      </a>
+                    </li>
+
+                    <li>
+                      <a href="" class="link-icon-team reset">
+                        <svg class="icon-social-team">
+                          <use href="./img/icons.svg#icon-linkedin_f">
+
+                          </use>
+                        </svg>
+                      </a>
+                    </li>
+
+                  </ul>
+                </div>
+
+            </li>
+
+          </ul>
+        </div>
+      </section>
+      <section class="sectionCustomers">
+        <div class="container">
+          <h2 class="sectionCustomers-title">Customers</h2>
+          <ul class="list-customers reset">
+            <li>
+              <a href="" class="tumba-icon-customer reset">
+                <svg class="icon-customers">
+                  <use href="./img/icons.svg#icon-customer_1"></use>
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a href="" class="tumba-icon-customer reset">
+                <svg class="icon-customers">
+                  <use href="./img/icons.svg#icon-customer_2"></use>
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a href="" class="tumba-icon-customer reset">
+                <svg class="icon-customers">
+                  <use href="./img/icons.svg#icon-customer_3"></use>
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a href="" class="tumba-icon-customer reset">
+                <svg class="icon-customers">
+                  <use href="./img/icons.svg#icon-customer_4"></use>
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a href="" class="tumba-icon-customer reset">
+                <svg class="icon-customers">
+                  <use href="./img/icons.svg#icon-customer_5"></use>
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a href="" class="tumba-icon-customer reset">
+                <svg class="icon-customers">
+                  <use href="./img/icons.svg#icon-customer_6"></use>
+                </svg>
+              </a>
+            </li>
+
+          </ul>
+        </div>
+      </section>
     </main>
     <footer class="footer">
-        <a class="logo reset" href="">WEB<span class="footer-span">STUDIO</span></a>
-        <p>Increase the flow of customers and sales for your business with digital marketing & growth solutions.</p>
-    </footer>
-</body>
+      <div class="container footer-flex">
+        <div class="footer-content">
+          <a class="logo reset" href=""
+            >WEB<span class="footer-span">STUDIO</span></a
+          >
+          <p class="text-footer-webstudio">
+            Increase the flow of customers and sales for your business with
+            digital marketing & growth solutions.
+          </p>
+        </div>
+        <div class="footer-icon">
+          <p>Social media</p>
+          <ul class="icon-footer reset">
+
+            <li>
+              <a href="" class="link-icon reset">
+                <svg class="icon-social">
+                  <use href="./img/icons.svg#icon-instagram_f"></use>
+                </svg>
+              </a>
+            </li>
+
+            <li>
+              <a href="" class="link-icon reset">
+                <svg class="icon-social">
+                  <use href="./img/icons.svg#icon-twitter_f"></use>
+                </svg>
+              </a>
+            </li>
+
+            <li>
+              <a href="" class="link-icon reset">
+                <svg class="icon-social">
+                  <use href="./img/icons.svg#icon-facebook_f"></use>
+                </svg>
+              </a>
+            </li>
+
+            <li>
+              <a href="" class="link-icon reset">
+                <svg class="icon-social">
+                  <use href="./img/icons.svg#icon-linkedin_f"></use>
+                </svg>
+              </a>
+            </li>
+
+          </ul>
+        </div>
+
+        <div class="footer-form">
+          <p>Subscribe</p>
+          <form class="input-btn" autocomplete="off">
+              <label for="input-email"></label>
+              <input 
+              class="footer-input" 
+              type="email" 
+              id="input-email" 
+              name="input-email" 
+              placeholder="E-mail" 
+              autocomplete="email">
+              <button class="btn-footer" type="submit">
+                Subscribe
+                <svg class="icon-footer-form">
+                  <use href="./img/icons.svg#icon-send"></use>
+                </svg>
+              </button>
+          </form>
+        </div>
+
+      </div>
+    </footer> -->
+
+
+<!-- модальное окно -->
+    <!-- <div data-modal class="backdrop is-hidden">
+      <div class="modal">
+        <button data-modal-close class="bnt-close">
+          <svg class="icon-close">
+            <use href="./img/icons.svg#icon-close"></use>
+          </svg>
+        </button>
+        <b class="modal-text">Leave your contacts and we will call you back</b>
+        <form autocomplete="off">
+          <div class="modal-form-field">
+            <label class="modal-form-label" for="name">Name</label>
+            <input class="modal-form-input" type="text" name="name" id="name" autocomplete="name" autofocus>
+            <svg class="modal-icon">
+              <use class="modal-icon-properties" href="./img/icons.svg#icon-person"></use>
+            </svg>
+          </div>
+          <div class="modal-form-field">
+            <label class="modal-form-label" for="phone">Phone</label>
+            <input class="modal-form-input" type="tel" name="phone" id="phone" autocomplete="tel">
+            <svg class="modal-icon">
+              <use class="modal-icon-properties" href="./img/icons.svg#icon-phone"></use>
+            </svg>
+          </div>
+          <div class="modal-form-field">
+            <label class="modal-form-label" for="email">Email</label>
+            <input class="modal-form-input" type="email" name="email" id="email" autocomplete="email">
+            <svg class="modal-icon">
+              <use class="modal-icon-properties" href="./img/icons.svg#icon-email"></use>
+            </svg>
+          </div>
+          <div class="modal-form-field-comment">
+            <label class="modal-form-label" for="comment">Comment</label>
+            <textarea class="modal-form-textarea" name="comment" id="comment" rows="8" placeholder="Text input"></textarea>
+          </div>
+          
+          <div class="modal-checkbox">
+            <input class="modal-checkbox-input" type="checkbox" value="privacy" name="privacy" id="privacy">
+            <span class="modal-checkbox-icon"></span>
+            <label class="modal-checkbox-text" for="privacy">I accept the terms and conditions of the <a href="">Privacy Policy</a></label>
+          </div>  
+
+          <button class="btn-modal" type="submit">Send</button>
+        </form>
+      </div>
+    </div> -->
+<!-- фиксация навигации -->
+    <!-- <script src="./scripts/scripts.js"></script> -->
+<!-- открытия модального окна -->
+    <script src="./scripts/modal.js"></script>
+  </body>
 </html>
+
+
+
+
