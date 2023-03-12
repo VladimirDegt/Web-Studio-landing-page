@@ -2,6 +2,9 @@
 https://github.com/sindresorhus/modern-normalize
 https://cdnjs.com/libraries/modern-normalize
 
+//! Для оптимізації зображень використовуй сервіс squoosh.
+https://squoosh.app/
+
 //! Для генерації SVG-спрайту використовуй сервіс Icomoon.
 https://icomoon.io/
 

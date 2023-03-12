@@ -259,7 +259,7 @@ img {
     width: 40px;
     height: 40px;
     border-radius: 50%;
-    background-color: #F4F4FD;
+    background-color: var(--active-color);
     transition: background-color var(--animation-time) var(--animation-function);
 }
 
@@ -285,13 +285,16 @@ img {
 
 /*!  -------------------END выезжающее мобильное меню---------------------------- */
 
-@media screen and (min-width: 428px) {
+
+
+@media screen and (min-width: 480px) {
     .container {
         width: 426px;
         margin-left: auto;
         margin-right: auto;
     }
 }
+
     .hero {
         padding-top: 112px;
         padding-bottom: 112px; 
@@ -304,6 +307,16 @@ img {
         text-align: center;
         background-color: var(--second-background-title);
     }
+
+
+@media screen and (min-device-pixel-ratio: 2) and (max-width: 767px), 
+       screen and (min-resolution: 192dpi) and (max-width: 767px), 
+       screen and (min-resolution: 2dppx) and (max-width: 767px) {
+    .hero {
+        background-image: linear-gradient(to right, rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url("../img/people-office-mobile@2x.jpg");
+    }
+}
+
 
     .hero-title {
         width: 320px;
@@ -818,8 +831,16 @@ img {
     }
 }
 
+@media screen and (min-device-pixel-ratio: 2) and (min-width: 768px), 
+       screen and (min-resolution: 192dpi) and (min-width: 768px), 
+       screen and (min-resolution: 2dppx) and (min-width: 768px) {
+    .hero {
+        background-image: linear-gradient(to right, rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url("../img/people-office-tablet@2x.jpg");
+    }
+}
+
 /*! -------------------Desktop---------------------- */
-@media screen and (min-width: 1440px) {
+@media screen and (min-width: 1200px) {
     .container {
         width: 1158px;
     }
@@ -1012,6 +1033,14 @@ img {
 
     .footer-input {
         margin-bottom: 0;
+    }
+}
+
+@media screen and (min-device-pixel-ratio: 2) and (min-width: 1200px), 
+       screen and (min-resolution: 192dpi) and (min-width: 1200px), 
+       screen and (min-resolution: 2dppx) and (min-width: 1200px) {
+    .hero {
+        background-image: linear-gradient(to right, rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url("../img/people-office@2x.jpg");
     }
 }
 
