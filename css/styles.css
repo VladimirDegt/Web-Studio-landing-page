@@ -80,7 +80,7 @@ img {
 
 }
 
-@media screen and (max-width: 1439px) {
+@media screen and (max-width: 1199px) {
     .tumba-icon-solutions,
     .sectionTwo {
         display: none;
@@ -898,8 +898,6 @@ img {
         transition: color var(--animation-time) var(--animation-function); */
     }
 
-
-
     .hero {
         background-image: none;
         background-color: transparent;
@@ -924,6 +922,11 @@ img {
 
     .list-solutions {
         display: flex;
+        max-width: 1158px;
+    }
+
+    .sectionOne-card {
+        width: 264px;
     }
 
     .list-solutions.reset {
@@ -932,6 +935,10 @@ img {
 
     .list-solutions > li:not(:first-child) {
         margin-left: 24px;
+    }
+
+    .list-solutions > li:nth-child(n+1) {
+        margin-bottom: 0;
     }
 
     .list-solutions .sectionOne-card {
@@ -1016,6 +1023,10 @@ img {
         margin-left: 0;
     }
 
+    .list-team > .tumba-person:nth-child(n+3) {
+        margin-top: 0;
+    }
+
     .list-team .tumba-person {
         margin-right: 0;
     }
@@ -1067,6 +1078,7 @@ img {
     .footer-content {
         width: 264px;
         margin-bottom: 0;
+        margin-right: 0;
     }
 
     .footer-icon {
@@ -1111,7 +1123,7 @@ img {
 
 .modal {
     position: absolute;
-    min-width: 408px;
+    max-width: 392px;
     top: 50%;
     left: 50%;
     padding: 72px 24px 24px 24px;
@@ -1195,9 +1207,12 @@ img {
 }
 
 .btn-modal {
+    display: block;
     width: 169px;
-    padding: 16px 32px;
-    margin-left: 95px;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    margin-left: auto;
+    margin-right: auto;
     border: none;
     border-radius: 4px;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
@@ -1307,6 +1322,13 @@ img {
 .modal-checkbox-text a {
     color: rgba(77, 90, 229, 1);
 }
+
+@media screen and (min-width: 768px) {
+    .modal {
+        min-width: 408px;
+    }
+}
+
 
 /*! Portfolio */
 .portfolio {
