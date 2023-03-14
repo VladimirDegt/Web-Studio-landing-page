@@ -43,7 +43,7 @@
             </li>
           </ul>
         </nav>
-        <button data-modal-open class="btn-mobile-menu" type="button">
+        <button data-burger-open class="btn-mobile-menu" type="button">
           <!-- <svg class="mobile-menu-open-icon">
             <use href="./img/icons.svg#icon-antenna"></use>
           </svg>           -->
@@ -52,9 +52,9 @@
         
         <!-- ----------------мобильное меню---------------------- -->
 
-        <div data-modal class="mobile-menu is-hidden">
-          <div class="container mobile-menu-container">
-          <button data-modal-close class="bnt-close">
+        <div data-burger class="mobile-menu is-hidden">
+          <div class="mobile-menu-container">
+          <button data-burger-close class="bnt-close">
             <svg class="icon-close">
               <use href="./img/icons.svg#icon-close"></use>
             </svg>
@@ -71,18 +71,19 @@
               <a class="mobile-menu-list-pages-link reset" href="./contacts.html">Contacts</a>
             </li>
           </ul>
-
+          <div>
           <ul class="mobile-menu-list-contacts reset">
+            
             <li>
-              <li>
-                <a class="contacts-tel reset" href="tel:+110001111111"
-                  >+11 (000) 111-11-11</a
-                >
-              </li>
-              <a class="contacts-mail reset" href="mailto:info@devstudio.com"
-                >info@devstudio.com</a
-              >
+              <a class="contacts-tel reset" href="tel:+110001111111"
+                  >+11 (000) 111-11-11</a>
             </li>
+
+            <li>
+              <a class="contacts-mail reset" href="mailto:info@devstudio.com"
+                >info@devstudio.com</a>
+            </li>
+
           </ul>
           
           <ul class="mobile-menu-list-social reset">
@@ -127,6 +128,7 @@
             </li>
 
           </ul>
+        </div>
         </div>
       </div>
         <!-- ----------------END мобильное меню---------------------- -->
@@ -541,7 +543,7 @@
 
     <footer class="footer">
       <div class="container footer-flex">
-        <div class="foter-content-icon">
+        <div class="footer-content-icon">
         <div class="footer-content">
           <a class="logo reset" href=""
             >WEB<span class="footer-span">STUDIO</span></a
@@ -665,8 +667,11 @@
     
 <!-- фиксация навигации -->
     <!-- <script src="./scripts/scripts.js"></script> -->
-<!-- открытия модального окна -->
+<!-- открытие модального окна -->
     <script src="./scripts/modal.js"></script>
+
+<!-- открытие бургер меню -->
+<script src="./scripts/burger-menu.js"></script>
   </body>
 </html>
 
