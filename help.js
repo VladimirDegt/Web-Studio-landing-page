@@ -11,6 +11,9 @@ https://icomoon.io/
 //! Для оптимізації створеного SVG-спрайту використовуй сервіс svgomg.
 https://jakearchibald.github.io/svgomg/
 
+//! Подключение рендомных фото
+<img src="https://source.unsplash.com/400x400?cat"></img>
+
 //? паттерн скрытия элемента
 .visually-hidden {
     position: absolute;
