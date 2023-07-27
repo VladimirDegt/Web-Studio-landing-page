@@ -12,4 +12,8 @@ and smartphones.
 
 ## Tablet
 
-![Desktop](./assets/Tablet.jpg) ##Mobile ![Desktop](./assets/Mobile.jpg)
+![Desktop](./assets/Tablet.jpg) 
+
+## Mobile 
+
+![Desktop](./assets/Mobile.jpg)
